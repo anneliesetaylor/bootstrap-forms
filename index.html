@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Poodle Quiz using Bootstrap 4 form styles</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+
+        <h1>Quiz: All Things Poodles</h1>
+          <p>How much do you know about poodles? Take this short quiz to test your knowledge of the breed and see what you know!</p>
+          <p>The content on this page was retreived from <a href="https://en.wikipedia.org/wiki/Poodle" target="_blank"> this Wikipedia page</a>.</p>
+
+        <form>
+
+
+<!--Question 1-->
+          <div class="form-group">
+
+            <label class="form-control-label">Poodles originated from what continent?</label>
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="continents" value="Asia"> Asia
+                  </label><!--form-check-label-->
+                </div><!--form-check-->
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="continents" value="Africa"> Africa
+                  </label><!--form-check-label-->
+                </div><!--form-check-->
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="continents" value="n_america"> North America
+                  </label><!--form-check-label-->
+                </div><!--form-check-->
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="continents" value="s_america"> South America
+                  </label><!--form-check-label-->
+                </div><!--form-check-->
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="continents" value="antarctica"> Antarctica
+                  </label><!--form-check-label-->
+                </div><!--form-check-->
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="continents" value="europe"> Europe
+                  </label><!--form-check-label-->
+                </div><!--form-check-->
+
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="continents" value="australia"> Australia
+                  </label><!--form-check-label-->
+                </div><!--form-check-->
+
+          </div><!--form-group-->
+
+
+
+<!--Question 2-->
+          <div class="form-group">
+            <label class="form-control-label" for="country">According to the British Kennel Club, the American Kennel Club, and the Canadian Kennel Club, what country did the breed originate from?</label>
+            <input class="form-control" type="text" name="country" id="country">
+          </div><!--form-group-->
+
+
+<!--Question 3-->
+          <div class="form-group">
+
+            <label class="form-control-label">The poodle comes in what three size varieties?</label>
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="three_varieties" value="pocket"> Pocket
+                </label><!--form-check-label-->
+              </div><!--form-check-->
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="three_varieties" value="standard"> Standard
+                </label><!--form-check-label-->
+              </div><!--form-check-->
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="three_varieties" value="classic"> Classic
+                </label><!--form-check-label-->
+              </div><!--form-check-->
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="three_varieties" value="miniature"> Miniature
+                </label><!--form-check-label-->
+              </div><!--form-check-->
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="three_varieties" value="teacup"> Teacup
+                </label><!--form-check-label-->
+              </div><!--form-check-->
+
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="three_varieties" value="toy"> Toy
+                </label><!--form-check-label-->
+              </div><!--form-check-->
+
+          </div><!--form-group-->
+
+
+<!--Question 4-->
+          <div class="form-group">
+            <label class="form-control-label" for="smartest_breed">Poodles are the second most intelligent dog breed behind what other breed?</label>
+            <input class="form-control" type="text" name="smartest_breed" id="smartest_breed">
+          </div><!--form-group-->
+
+
+<!--Question 5-->
+          <div class="form-group">
+            <label class="form-control-label" for="color_patterns">Poodles come in wide variety of colors as well as coloration patterns. Which of the following is not a coloration pattern recognized by the American Kennel Club?</label>
+            <select class="form-control" name="color_patterns" id="color_patterns">
+              <option value="no choice" disabled selected>Select one</option>
+              <option value="parti">Parti</option>
+              <option value="abstract">Abstract</option>
+              <option value="sable">Sable</option>
+              <option value="phantom">Phantom</option>
+              <option value="dicoat">Dicoat</option>
+              <option value="brindle">Brindle</option>
+            </select>
+          </div><!--form-group-->
+
+
+<!--Question 6-->
+          <div class="form-group">
+            <label class="form-control-label" for="working_dogs_qualities">Poodles have been used as working dogs in the military since roughly the 17th century. What specific qualities does the breed possesses that have made poodles capable of being working dogs?</label>
+            <textarea class="form-control" name="working_dogs_qualities" rows="5" id="working_dogs_qualities"></textarea>
+          </div><!--form-group-->
+
+<!--buttons-->
+        <div class="form-group">
+          <button class="btn btn-primary" type="submit" value="submit">Submit</button>
+          <button class="btn btn-primary" type="reset" value="reset">Start over</button>
+        </div>
+
+        </form>
+
+
+      </div><!--end of column-->
+    </div><!--end of row-->
+  </div><!--end of container-->
+
+
+</body>
+</html>
